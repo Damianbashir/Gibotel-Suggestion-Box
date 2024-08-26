@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gibotel Suggestion Box</title>
+    
+    <link rel="stylesheet" href="box.css">
+</head>
+<body>
+    <h1>Welcome to the Gibotel Suggestion Box!</h1>
+    <p>Join the conversation. Share your insights and suggestions to co-create a better experience together.</p>
+    <div id="dateDisplay"></div>
+    <div class="container">
+        <h2>General Suggestion</h2>
+        <form id="general-suggestion-form">
+            <label for="general-suggestion">Suggestion:</label>
+            <textarea id="general-suggestion" name="general-suggestion" required></textarea>
+            <button type="submit">Submit General Suggestion</button>
+        </form>
+
+        <h2>Food Rating</h2>
+        <form id="food-rating-form">
+            <label for="food-rating">Rating (0: worst ,3-4: Not good ,5 : Normal ,6-8: Good ,9 -10 : Fantastic):</label>
+            <input type="number" id="food-rating" name="food-rating" min="0" max="10" required>
+            <label for="food-feedback">Feedback:</label>
+            <textarea id="food-feedback" name="food-feedback"></textarea>
+            <button type="submit">Submit Food Rating</button>
+        </form>
+        <div>
+            <h3>Food Rating</h3>
+            <label for="qualityRating">Quality:</label>
+            <input type="number" id="qualityRating" min="0" max="10">
+            <br>
+          
+            <label for="quantityRating">Quantity:</label>
+            <input type="number" id="quantityRating" min="0" max="10">
+            <br>
+          
+            <label for="tasteRating">Taste:</label>
+            <input type="number" id="tasteRating" min="0" max="10">
+            <br>
+          
+            <button onclick="rateFood()">Rate Food</button>
+            <p id="ratingResult"></p>
+          </div>
+</body>
+</html>
